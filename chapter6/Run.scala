@@ -1,4 +1,4 @@
 object Run extends App {
-    val oneHalf = new Rational(1, 2)
-    Console println oneHalf
+    val infinity = new Rational(1, 0)
+    Console println infinity
 }
