@@ -13,4 +13,11 @@ object Run extends App {
     
     val obj = new ForLoop(filesHere)
     obj.grep(".*gcd.*")
+
+    def scalaFiles = for (file <- filesHere
+        if file.getName.endsWith(".scala"))
+        yield file
+    
+    for (file <- scalaFiles)
+        Console println file
 }
