@@ -12,4 +12,5 @@ object Run extends App {
     // Console println product
     Console println (oneHalf + 2)
     Console println (oneHalf / 2)
+    Console println (2 * oneHalf)
 }
