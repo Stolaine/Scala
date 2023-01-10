@@ -10,4 +10,7 @@ object Run extends App {
     
     for (i <- 1 until 4)
         Console println s"Iteration $i"
+    
+    val obj = new ForLoop(filesHere)
+    obj.grep(".*gcd.*")
 }
