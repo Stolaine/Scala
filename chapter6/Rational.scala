@@ -14,10 +14,31 @@ class Rational(n: Int, d: Int) {
             denom * that.denom
         )
     
+    def + (that: Int): Rational =
+        this + new Rational(that, 1)
+    
+    def - (that: Rational): Rational =
+        new Rational(
+            numer * that.denom - denom * that.numer,
+            denom * that.denom
+        )
+    
+    def - (that: Int): Rational =
+        this - new Rational(that, 1)
+    
     def * (that: Rational): Rational =
         new Rational (
             numer * that.numer, denom * that.denom
         )
+    
+    def * (that: Int): Rational =
+        this * new Rational(that, 1)
+    
+    def / (that: Rational): Rational =
+        this * new Rational(that.denom, that.numer)
+    
+    def / (that: Int): Rational =
+        this / new Rational(that, 1)
 
     def lessThan(that: Rational): Boolean =
         this.numer * that.denom < this.denom * that.numer

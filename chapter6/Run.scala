@@ -5,9 +5,11 @@ object Run extends App {
     // val five = new Rational(5)
     // Console println five
     // Console println (oneHalf max oneThird)
-    val elevenBySeven = new Rational(66, 42)
-    val sum = oneHalf + elevenBySeven
-    val product = oneHalf * elevenBySeven
-    Console println sum
-    Console println product
+    // val elevenBySeven = new Rational(66, 42)
+    // val sum = oneHalf + elevenBySeven
+    // val product = oneHalf * elevenBySeven
+    // Console println sum
+    // Console println product
+    Console println (oneHalf + 2)
+    Console println (oneHalf / 2)
 }
