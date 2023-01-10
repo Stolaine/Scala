@@ -8,8 +8,9 @@ class ForLoop(filesHere: Array[File]) {
             file <- files
             if file.getName.endsWith(".txt")
             line <- fileLines(file)
-            if line.trim.matches(pattern)}
-            Console println s"${file}: ${line.trim}"
+            trimmed = line.trim
+            if trimmed.matches(pattern)}
+            Console println s"${file}: ${trimmed}"
     }
 
     def fileLines(file: File) = 
