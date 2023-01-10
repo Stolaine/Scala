@@ -4,11 +4,11 @@ class ForLoop(filesHere: Array[File]) {
     val files: Array[File] = filesHere
 
     def grep(pattern: String): Unit = {
-        for (
+        for {
             file <- files
-            if file.getName.endsWith(".txt");
+            if file.getName.endsWith(".txt")
             line <- fileLines(file)
-            if line.trim.matches(pattern))
+            if line.trim.matches(pattern)}
             Console println s"${file}: ${line.trim}"
     }
 
